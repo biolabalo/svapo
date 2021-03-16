@@ -468,6 +468,12 @@ ul {
   color: #1b294b;
 }
 
+.nostri-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .card-content-3 {
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
@@ -494,10 +500,60 @@ ul {
   padding-bottom: 50px;
 }
 
+@media (max-width: 600px) {
+  .nostri-child {
+    display: block;
+    text-align: center;
+  }
+}
+
 .d-grid-2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
+}
+
+@media (min-width: 400px) {
+  .d-grid-2 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .d-grid-2 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .d-grid-2 {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .d-grid-2 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1105px) {
+  .d-grid-2 {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1352px) {
+  .d-grid-2 {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
 }
 /*# sourceMappingURL=style.css.map */
