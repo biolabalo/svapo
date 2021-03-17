@@ -398,9 +398,13 @@ ul {
     
   }
 
+  .res-h1{
+    font-size: 3.5rem;
+}
+
   @media (max-width: 790px) {
     .res-h1{
-        color: red !important;
+        font-size: 2rem;
     }
     
   }
@@ -542,15 +546,10 @@ width: 85%;
 
 
 .gli-aromi{
-    // display: flex;
-
     display: flex;
-    // flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
     margin: 0 auto;
-    // grid-gap: 5rem;
-    
 }
 
 .flex-basis-2{

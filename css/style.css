@@ -417,9 +417,13 @@ ul {
   }
 }
 
+.res-h1 {
+  font-size: 3.5rem;
+}
+
 @media (max-width: 790px) {
   .res-h1 {
-    color: red !important;
+    font-size: 2rem;
   }
 }
 
