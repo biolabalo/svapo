@@ -594,7 +594,7 @@ ul {
 }
 
 .bg-image-height {
-  padding-top: 20px;
+  padding: 10px 0px;
 }
 
 @media (max-width: 1495px) {
