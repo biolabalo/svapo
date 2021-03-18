@@ -594,7 +594,7 @@ ul {
 }
 
 .bg-image-height {
-  padding: 10px 0px;
+  padding: 15px 0px;
 }
 
 @media (max-width: 1495px) {
@@ -656,10 +656,42 @@ ul {
   }
 }
 
-@media (max-width: 553px) {
+@media (max-width: 1062px) {
+  .card {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 940px) {
   .gli-header {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .red-button {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 533px) {
+  .red-button {
+    margin: 0 auto !important;
+  }
+}
+
+.red-button {
+  background-color: #b02128;
+  /* Green */
+  border-radius: 10px;
+  border-color: #b02128;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 0px;
 }
 /*# sourceMappingURL=style.css.map */
