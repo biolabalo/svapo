@@ -125,6 +125,7 @@ ul {
 .bordered-li {
 	border-right: 1px solid #cbcbcb;
 	padding-right: 15px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 940px) {
@@ -134,8 +135,10 @@ ul {
 	}
 	.bordered-li {
 		border: none;
-		padding-right: 15px;
+		padding-top: 10px ;
+    padding-bottom: 10px;
 	}
+
 }
 
 // *********************** NAV STYLES ***********************
@@ -776,7 +779,7 @@ margin-right: 50px;
 .footer {
   width: 100%;
   position: relative;
-  height: auto;
+  height: 300px;
   background-color: #51575d;
 }
 .footer .col {
