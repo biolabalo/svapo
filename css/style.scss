@@ -669,3 +669,46 @@ width: 85%;
     cursor: pointer;
     margin: 10px 0px;
   }
+
+
+  .brw-color{
+    background: #ebebeb;
+  }
+
+  .card-columns .cardo {
+    padding: 15px;
+    height: auto;
+    display: flex;
+    color:#000000;
+  }
+  .card-columns{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+  
+  }
+
+
+
+  @media (max-width: 1165px) {
+
+    .brw-color .card   {
+      margin-bottom: 10px;
+    }
+  }
+
+
+  @media (max-width: 1193px) {
+
+    .card-columns{
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .brw-color .cardo   {
+      justify-content: space-evenly;
+    }
+  }

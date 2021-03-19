@@ -694,4 +694,46 @@ ul {
   cursor: pointer;
   margin: 10px 0px;
 }
+
+.brw-color {
+  background: #ebebeb;
+}
+
+.card-columns .cardo {
+  padding: 15px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000000;
+}
+
+.card-columns {
+  display: -ms-grid;
+  display: grid;
+  overflow: hidden;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+
+@media (max-width: 1165px) {
+  .brw-color .card {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1193px) {
+  .card-columns {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .brw-color .cardo {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 /*# sourceMappingURL=style.css.map */
