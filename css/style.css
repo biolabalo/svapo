@@ -375,7 +375,7 @@ ul {
   height: 800px;
 }
 
-.bg-image-2 {
+.bg-image-2, .bg-image-3 {
   background: #333 url("../images/cloud.jpg");
   background-blend-mode: overlay;
   background-position: center;
@@ -405,12 +405,16 @@ ul {
 .card {
   background-color: white;
   color: white;
-  padding: 1rem;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 4rem;
+}
+
+.card .flex-column > div ~ div {
+  background-color: #f9f9f9;
+  padding: 1rem;
 }
 
 @media (max-width: 533px) {
@@ -515,7 +519,6 @@ ul {
       flex-basis: 35%;
   border-top: 1px solid #898989;
   border-bottom: 1px solid #898989;
-  margin-top: 4px;
 }
 
 .badge {
@@ -686,7 +689,7 @@ ul {
   }
 }
 
-.red-button {
+.red-button, .red-button-2 {
   background-color: #b02128;
   /* Green */
   border-radius: 10px;
@@ -701,6 +704,11 @@ ul {
   font-size: 16px;
   cursor: pointer;
   margin: 10px 0px;
+}
+
+.red-button-2 {
+  padding: 10px 20px 10px 10px;
+  width: 180px;
 }
 
 .brw-color {
@@ -746,5 +754,30 @@ ul {
   .brw-color .card {
     margin: 0px auto 30px auto;
   }
+}
+
+aside H1 {
+  color: #063a5c;
+  font-weight: bolder;
+}
+
+.bg-image-3 {
+  background: none;
+}
+
+.butter-color {
+  background: #ebebeb;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.grow-decimal {
+  -webkit-box-flex: 0.6;
+      -ms-flex-positive: 0.6;
+          flex-grow: 0.6;
+}
+
+.pb-5 {
+  padding-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */
