@@ -37,6 +37,8 @@ const gestureStart = (e) => {
 };
 
 const gestureMove = (e) => {
+
+   if(document.body.offsetWidth > 768) return;
   if (moving) {
     const currentPosition = e.pageX;
     const diff = currentPosition - initialPosition;
