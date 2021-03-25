@@ -40,7 +40,7 @@ const gestureMove = (e) => {
   if (moving) {
     const currentPosition = e.pageX;
     const diff = currentPosition - initialPosition;
-    track.style.transform = `translateX(${transform + diff}px)`;  
+    track.style.transform = `translateX(${transform + diff * 10}px)`;  
   }
 };
 
